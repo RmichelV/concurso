@@ -1,8 +1,14 @@
+#header img{
+    width: 90px;
+}
 
+.text-univalle{
+color: #AF1D5B !important;
+}
 
 
 #footer{
-    background: linear-gradient(41deg, rgba(163,21,38,1) 30%, rgba(177,20,70,1) 97%);
+    background: linear-gradient(41deg, rgba(163,21,38,1) 30%, rgba(210,65,111,1) 97%);
 }
 
 #footer a{
