@@ -2,6 +2,11 @@
     width: 90px;
 }
 
+.arduino{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 8px;
+    -webkit-text-stroke: #212529 0.5px;
+}
 
 .text-univalle{
 color: #AF1D5B !important;
@@ -30,6 +35,12 @@ position: relative;
 #carousel .overlay .container, #carousel .overlay .row{
 height: 100%;
 }
+
+.text-main{
+font-size: 30px;
+color: #ffffff;
+-webkit-text-stroke: #212529 0.5px;
+}
 .btn-canjeo{
 
    background-color: #AF1D5B;
@@ -41,6 +52,9 @@ background-color: #7c1d44;
 color: white;
 }
 
+.img-prof{
+height: 400px;
+}
 #place-time{
 background-color: #212529;
 color: white;
