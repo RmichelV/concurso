@@ -6,6 +6,10 @@
 color: #AF1D5B !important;
 }
 
+#main .carousel-inner img{
+    max-height: 70vh;
+    filter: grayscale(70%);
+}
 
 #footer{
     background: linear-gradient(41deg, rgba(163,21,38,1) 30%, rgba(210,65,111,1) 97%);
