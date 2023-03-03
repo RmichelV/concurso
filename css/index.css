@@ -2,6 +2,7 @@
     width: 90px;
 }
 
+
 .text-univalle{
 color: #AF1D5B !important;
 }
@@ -9,6 +10,36 @@ color: #AF1D5B !important;
 #main .carousel-inner img{
     max-height: 70vh;
     filter: grayscale(70%);
+}
+
+#carousel{
+position: relative;
+}
+
+#carousel .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    color: white;
+    z-index: 1;
+}
+
+#carousel .overlay .container, #carousel .overlay .row{
+height: 100%;
+}
+.btn-canjeo{
+
+   background-color: #AF1D5B;
+   color: white;
+}
+
+.btn-canjeo:hover{
+
+background-color: #7c1d44;
+color: white;
 }
 
 #footer{
