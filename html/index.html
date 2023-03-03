@@ -188,15 +188,40 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Canjea tu Tickets por una asistencia</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              ...
+              <form>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Ingresa tu usuario univalle</span>
+                            <input type="text" class="form-control" placeholder="Ejemplo: asd2333123" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                    </div>
+                    
+                </div>
+              <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <option selected>Selecciona tu carrera</option>
+                        <option value="1">Ingenieria en Sistemas Informaticos</option>
+                        <option value="2">Ingenieria Electrica</option>
+                      </select>
+                      
+                      <select class="form-select form-select-sm mb-4" aria-label=".form-select-sm example">
+                        <option selected>Selecciona la materia</option>
+                        <option value="1">Electronica Digital Aplicada</option>
+                        <option value="2">Algebra I</option>
+                        <option value="3">IoT</option>
+                      </select>
+                    </form>
+              <div class="alert alert-warning" role="alert">
+                Recibiras un correo de confirmación si tu ticket fue canjeado correctamente
+              </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-canjeo">Canjear</button>
             </div>
           </div>
         </div>
