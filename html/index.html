@@ -7,8 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
   </head>
-  <body>
-    <nav id="header"  class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="57">
+
+    <nav id="header"  class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
             <div class="container-fluid">
                 <a  class="navbar-brand" href="#"><img src="../img/logo.png" alt="RmichelV"> Arduino Day</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,19 +18,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
                     <li class="nav-item text-center">
-                        <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                        <a class="nav-link" aria-current="page" href="#main">La conferencia</a>
                     </li>
                     <li class="nav-item text-center">
-                        <a class="nav-link" href="#">Los oradores</a>
+                        <a class="nav-link" href="#speakers">Los oradores</a>
                     </li>
                     <li class="nav-item text-center">
-                        <a class="nav-link" href="#">El lugar y la fecha </a>
+                        <a class="nav-link" href="#place-time">El lugar y la fecha </a>
                     </li>
                     <li class="nav-item text-center">
-                        <a class="nav-link" href="#">Conviertete en orador </a>
+                        <a class="nav-link" href="#conviertete-en-orador">Conviertete en orador </a>
                     </li>
                     <li class="nav-item text-center">
-                        <a class="nav-link text-univalle" href="#">Canjeo de Tickets</a>
+                        <a class="nav-link text-univalle" data-bs-toggle="modal" href="#modal-compra" data-bs-target="#modal-compra" >Canjeo de Tickets</a>
                     </li>
                 </ul>
             </div>
@@ -61,7 +62,7 @@
                         <h1>Arduino Day</h1>
                         <p class="d-none d-md-block">Arduino Day llega por primera vez a UNIVALLE La Paz un evento para compartir en nuestra carrera el conocmiento y experiencia de los expertos que estan creando el futuro con Arduino. Ven a conocer a los oradores de primer nivel que tenemos para ti, a otros estudiantes de la carrera de Ingenieria en sistemas y Electronica Digital. Te esperamos </p>
                         <a href="#"class="btn btn-lg btn-outline-light mb-4 me-4">Quiero Ser Orador</a>
-                        <button type="button" class="btn btn-lg btn-canjeo mb-4">Canjear Tickets</button>
+                        <button type="button" class="btn btn-lg btn-canjeo mb-4" data-bs-toggle="modal" href="#modal-compra" data-bs-target="#modal-compra">Canjear Tickets</button>
                     </div>
                 </div>
             </div>
@@ -149,7 +150,7 @@
             </div>
             <div class="row">
                 <div class="col text-center">
-                    Anótate como orador para dar una charla sobre Arduino 
+                    Anótate como orador para dar una charla sobre <abbr data-bs-toggle="tooltip" title="tarjeta programable">Arduino</abbr> 
                     Cuentanos sobre lo que desees hablar!
                 </div>
             </div>
@@ -173,7 +174,7 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col">
+                            <div class="col mb-4">
                                 <button type="button" class="btn btn-canjeo btn-enviar">Enviar</button>
                             </div>
                         </div>
@@ -182,6 +183,24 @@
             </div>
         </div>
     </section>
+
+    <div id="modal-compra" class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <footer id="footer" class="pb-4  pt-4">
         <div class="container">
